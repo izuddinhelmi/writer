@@ -1,7 +1,39 @@
+/*
+
+Please keep this info, don't delete it please
+
+Original Author : Izuddin Helmi
+Website : http://kreativethemes.com
+Portfolio : http://dribbble.com/izuddinhelmi
+
+*/
+* {
+  -webkit-transition: All 0.3s ease;
+  -moz-transition: All 0.3s ease;
+  -o-transition: All 0.3s ease;
+  -ms-transition: All 0.3s ease;
+  transition: All 0.3s ease;
+}
 body {
   font-weight: 400;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
+}
+body ::selection {
+  background: #f06050;
+  color: #fff;
+}
+body ::-moz-selection {
+  background: #f06050;
+  color: #fff;
+}
+body a {
+  color: #f06050;
+  cursor: pointer;
+}
+body a:hover {
+  color: #ec3521;
+  text-decoration: none;
 }
 body h1,
 body h2,
@@ -11,30 +43,188 @@ body h5,
 body h6 {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
+  color: #282825;
 }
 body p {
   font-size: 18px;
   line-height: 1.5;
-  color: #71716C;
+  color: #71716c;
 }
-body article .post-title {
+body .container {
+  width: 700px;
+}
+body header#main-header {
+  position: fixed;
+  left: 251px;
+  padding: 30px 0;
+  background: #fff;
+  right: 0;
+  top: 0;
+  border-bottom: #eee solid 1px;
+}
+body header#main-header h1 {
+  margin: 0;
+  line-height: 1;
+  font-size: 24px;
+}
+body header#main-header span {
+  font-size: 14px;
+  color: #CBCBC6;
+  line-height: 1;
+}
+body header#main-header img.logo {
+  width: 40px;
+  height: auto;
+  margin-right: 15px;
+}
+body header#main-header img.logo.rounded {
+  border-radius: 5px;
+}
+body header#main-header .menu .bar {
+  width: 30px;
+  height: 4px;
+  margin-bottom: 6px;
+  border-radius: 3px;
+  background: #282825;
+  display: block;
+}
+body aside#main-sidebar {
+  width: 250px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  border-right: #eee solid 1px;
+  background: #fff;
+}
+body aside#main-sidebar > header {
+  padding: 15px;
+  border-bottom: #eee solid 1px;
+  position: fixed;
+  background: #fff;
+  width: 250px;
+  top: 0;
+  position: relative;
+  z-index: 1;
+}
+body aside#main-sidebar > header .title {
+  margin: 0;
+}
+body aside#main-sidebar > header span {
+  font-size: 10px;
+  background: #282825;
+  font-weight: 600;
+  color: #fff;
+  padding: 4px 8px;
+  line-height: 1;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+body aside#main-sidebar .sidebar-posts {
+  overflow: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -35px;
+}
+body aside#main-sidebar .sidebar-posts > ul {
+  margin-top: 52px;
+  margin-right: 20px;
+  padding: 0;
+}
+body aside#main-sidebar .sidebar-posts > ul > li {
+  padding: 15px;
+  border-bottom: #eee solid 1px;
+}
+body aside#main-sidebar .sidebar-posts > ul > li .media .media-object {
+  margin-right: 15px;
+}
+body aside#main-sidebar .sidebar-posts > ul > li .media .media-object img {
+  border-radius: 5px;
+}
+body aside#main-sidebar .sidebar-posts > ul > li .media .media-body .post-title {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: #999;
+}
+body aside#main-sidebar .sidebar-posts > ul > li:hover .media .media-body .post-title {
+  color: #282825;
+}
+body #content {
+  margin-left: 251px;
+  margin-top: 150px;
+}
+body #content article {
+  margin-bottom: 100px;
+}
+body #content article .post-title {
   font-size: 48px;
 }
-body article .post-meta {
+body #content article .post-title a {
+  color: #282825;
+}
+body #content article .post-title a:hover {
+  color: #f06050;
+}
+body #content article .post-meta {
   color: #CBCBC6;
   font-size: 14px;
   border-bottom: #eee solid 1px;
   padding: 15px 0 20px;
 }
-body article p:first-child,
-body article p.lead {
-  font-family: "Raleway", sans-serif !important;
+body #content article p:first-child,
+body #content article p.lead {
+  font-family: "Raleway", sans-serif;
   color: #474742;
-  font-size: 24px;
+  font-size: 28px;
+  font-weight: 400;
 }
-body article p {
+body #content article p {
   margin: 25px 0;
 }
-.container {
-  width: 700px;
+body #content article a.more {
+  border: #282825 solid 3px;
+  margin: 10px 0;
+  padding: 7px 20px;
+  color: #282825;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+body #content article a.more:hover {
+  text-decoration: none;
+  color: #f06050;
+  border-color: #f06050;
+  background: #f06050;
+  color: #fff;
+}
+body #content article .post-footer {
+  margin-top: 20px;
+}
+body #content article .post-footer .tags > li {
+  background: #fff;
+  border: #eee solid 1px;
+  color: #9A9A94;
+  font-size: 12px;
+  line-height: 1;
+  padding: 5px 7px;
+  border-radius: 3px;
+}
+body #content article .post-footer .tags > li:hover {
+  background: #f06050;
+  color: #fff;
+  border-color: #f06050;
+}
+body footer#main {
+  margin-left: 251px;
+  padding: 30px 0;
+  border-top: #eee solid 1px;
+  font-size: 13px;
+  color: #71716C;
 }
