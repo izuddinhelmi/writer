@@ -54,12 +54,9 @@ body .container {
   width: 700px;
 }
 body header#main-header {
-  position: fixed;
-  left: 251px;
+  margin-left: 251px;
   padding: 30px 0;
   background: #fff;
-  right: 0;
-  top: 0;
   border-bottom: #eee solid 1px;
 }
 body header#main-header h1 {
@@ -110,16 +107,6 @@ body aside#main-sidebar > header {
 }
 body aside#main-sidebar > header .title {
   margin: 0;
-}
-body aside#main-sidebar > header span {
-  font-size: 10px;
-  background: #282825;
-  font-weight: 600;
-  color: #fff;
-  padding: 4px 8px;
-  line-height: 1;
-  border-radius: 3px;
-  text-transform: uppercase;
 }
 body aside#main-sidebar .sidebar-posts {
   overflow: scroll;
@@ -186,7 +173,7 @@ body #content article p {
   margin: 25px 0;
 }
 body #content article a.more {
-  border: #282825 solid 3px;
+  border: #282825 solid 2px;
   margin: 10px 0;
   padding: 7px 20px;
   color: #282825;
@@ -221,10 +208,25 @@ body #content article .post-footer .tags > li:hover {
   color: #fff;
   border-color: #f06050;
 }
-body footer#main {
+body footer#footer-main {
   margin-left: 251px;
   padding: 30px 0;
   border-top: #eee solid 1px;
   font-size: 13px;
   color: #71716C;
+}
+@media (max-width: 1024px) {
+  body #main-sidebar {
+    display: none;
+  }
+  body header#main-header,
+  body #content,
+  body footer#footer-main {
+    margin-left: 0;
+    left: 0;
+  }
+  body .container {
+    width: auto;
+    padding: 0 30px;
+  }
 }

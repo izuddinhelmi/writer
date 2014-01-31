@@ -30,7 +30,6 @@
     </header>
     <aside id="main-sidebar">
       <header>
-        <span class="pull-right">Hide</span>
         <h4 class="title">Latest Posts</h4>
       </header>
       <div class="sidebar-posts">
@@ -266,15 +265,23 @@
       </div>
 
     </section>
-    <footer id="main">
+    <footer id="footer-main">
       <div class="container">
         &copy; 2014 Copyright by Daenerys Targaryen. All rights reserved. KreativeWriter by <a href="http://dribbble.com/izuddinhelmi">Izuddin Helmi</a>
       </div>
     </footer>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/retina.min.js"></script>
+    <script type="text/javascript" src="js/waypoints.min.js"></script>
+    <script type="text/javascript" src="js/waypoints-sticky.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#main-header').waypoint('sticky', {
+          offset: 30
+        });
+      });
+    </script>
   </body>
 </html>

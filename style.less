@@ -7,6 +7,7 @@ Website : http://kreativethemes.com
 Portfolio : http://dribbble.com/izuddinhelmi
 
 */
+@import url(css/retina.less);
 
 @theme : #F06050;
 @headline : #282825;
@@ -57,12 +58,10 @@ body {
 		width:700px;
 	}
 	header#main-header {
-		position: fixed;
-		left:251px;
+		//position: relative;
+		margin-left:251px;
 		padding:30px 0;
 		background: #fff;
-		right: 0;
-		top:0;
 		border-bottom: #eee solid 1px;
 		h1 {
 			margin:0;
@@ -92,6 +91,11 @@ body {
 				display: block;
 			}
 		}
+		&.stuck {
+			//position: fixed;
+			//width: 100%;
+			//top:0;
+		}
 	}
 	aside#main-sidebar {
 		width: 250px;
@@ -113,16 +117,6 @@ body {
 			z-index: 1;
 			.title {
 				margin:0;
-			}
-			span {
-				font-size: 10px;
-				background: #282825;
-				font-weight: 600;
-				color: #fff;
-				padding:4px 8px;
-				line-height: 1;
-				border-radius: 3px;
-				text-transform: uppercase;
 			}
 		}
 		.sidebar-posts {
@@ -196,7 +190,7 @@ body {
 				margin:25px 0;
 			}
 			a.more {
-				border: #282825 solid 3px;
+				border: #282825 solid 2px;
 				margin:10px 0;
 				padding: 7px 20px;
 				color: #282825;
@@ -236,11 +230,27 @@ body {
 			}
 		}
 	}
-	footer#main {
+	footer#footer-main {
 		margin-left:251px;
 		padding:30px 0;
 		border-top: #eee solid 1px;
 		font-size: 13px;
 		color: #71716C;
+	}
+}
+
+@media (max-width: 1024px) {
+	body {
+		#main-sidebar {display: none;}
+		header#main-header, 
+		#content, 
+		footer#footer-main {
+			margin-left:0;
+			left: 0;
+		}
+		.container {
+			width: auto;
+			padding:0 30px;
+		}
 	}
 }
