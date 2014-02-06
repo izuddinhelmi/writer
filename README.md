@@ -3,9 +3,11 @@ KreativeWriter
 
 Free Twitter Bootstrap Theme. 
 
-WordPress version also will be available for free when I have time
+Demo : http://demo.izuddinhelmi.com/writer/
 
-
+* Retina enable
+* Responsive
+* Black and white, so you can color it to your style.
 
 
 
